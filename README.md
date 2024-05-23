@@ -1,15 +1,15 @@
-## MCDevTools Powershell Automated Deployment Manager
+## SFMC DevTools Powershell Automated Deployment Manager
 ### Description
-The MCDevTools Powershell Automated Deployment Manager make use of [Accenture MCDevTools](https://github.com/Accenture/sfmc-devtools) and it's ability to bulk create and update solutions across multiple Business Units and instances with a single powerful command.
+The SFMC DevTools Powershell Automated Deployment Manager make use of [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools) and it's ability to bulk create and update solutions across multiple Business Units and instances with a single powerful command.
 
 ### Features
 - Unified creation and updating of solutions across many Business Units and instances with a single script
 - Essential for enterprise deployments solutions of Salesforce Marketing Cloud to ensure correct versioning across all Business Unit
 - Version control can be applied as per usual as the script will automatically execute itself in a way that doesn't require manually copying to the ./template directory for the execution
-- Incredible possibilities to expand automations for any solutions when the MCDevTools Powershell Automated Deployment Manager is combined with the merge fields functionality of [Accenture MCDevTools](https://github.com/Accenture/sfmc-devtools).
+- Incredible possibilities to expand automations for any solutions when the SFMC DevTools Powershell Automated Deployment Manager is combined with the merge fields functionality of [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools).
 
 ### Incredible Possibilities for Automated Deployment
-Using this PowerShell Automated Deployment Manager along with [Accenture MCDevTools](https://github.com/Accenture/sfmc-devtools) merge field functionality, there are endless possibilities to expand and replace any metadata available such as:
+Using this PowerShell Automated Deployment Manager along with [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools) merge field functionality, there are endless possibilities to expand and replace any metadata available such as:
 - Query activity source and target Data Extensions
 - Automation timezone start times (such as starting at 7am in the local timezone)
 - Dynamic folder naming
@@ -18,11 +18,11 @@ Using this PowerShell Automated Deployment Manager along with [Accenture MCDevTo
 The options are practically limitless, as long as it's editable (and replaceable) within the metadata. [Instructions below](#advanced-scenarios).
 
 ### Pre-requisites
-- Working knowledge of [Accenture MCDevTools](https://github.com/Accenture/sfmc-devtools), specifically the `mcdev retrieve` and `mcdev deploy` functionality.
+- Working knowledge of [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools), specifically the `mcdev retrieve` and `mcdev deploy` functionality.
 
 ### Preparation
-1. Install [Accenture MCDevTools](https://github.com/Accenture/sfmc-devtools) and setup authorisation correctly as per usual.
-2. Copy the `src` directory of this solution into your local project directory which has [Accenture MCDevTools](https://github.com/Accenture/sfmc-devtools) installed like this:
+1. Install [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools) and setup authorisation correctly as per usual.
+2. Copy the `src` directory of this solution into your local project directory which has [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools) installed like this:
 
     ````
     [local project]\src\packagedSolutions\solutionA
