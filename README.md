@@ -1,24 +1,24 @@
 ## SFMC DevTools Powershell Automated Deployment Manager
 ### Description
-The SFMC DevTools Powershell Automated Deployment Manager make use of [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools) and it's ability to bulk create and update solutions across multiple Business Units and instances with a single powerful command.
+The **SFMC DevTools Powershell Automated Deployment Manager** makes use of [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools) and it's ability to bulk create and update solutions across multiple Business Units and Salesforce Marketing Cloud instances with a single powerful command.
 
 ### Features
-- Unified creation and updating of solutions across many Business Units and instances with a single script
-- Essential for enterprise deployments solutions of Salesforce Marketing Cloud to ensure correct versioning across all Business Unit
-- Version control can be applied as per usual as the script will automatically execute itself in a way that doesn't require manually copying to the ./template directory for the execution
-- Incredible possibilities to expand automations for any solutions when the SFMC DevTools Powershell Automated Deployment Manager is combined with the merge fields functionality of [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools).
+- Unified creation and updating of solutions across multiple Business Units and instances with a single script
+- Essential for enterprise deployments solutions of Salesforce Marketing Cloud to ensure correct versioning across all Business Units
 
 ### Incredible Possibilities for Automated Deployment
-Using this PowerShell Automated Deployment Manager along with [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools) merge field functionality, there are endless possibilities to expand and replace any metadata available such as:
-- Query activity source and target Data Extensions
-- Automation timezone start times (such as starting at 7am in the local timezone)
-- Dynamic folder naming
+Using this SFMC DevTools Powershell Automated Deployment Manager along with [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools) merge field (market lists) functionality, there are endless possibilities to expand and replace any metadata available such as:
+- Developing a global solution rollout out perfectly to all Business Units at once
+- Dynamic updating of Query activity source and target Data Extensions 
+- Localised automation timezone start times (such as starting at 7am in the local timezone of each Business Unit, instead of all starting at the same time)
+- Dynamic folder naming using suffix/prefixes
 - Dynamic Email content such as displaying images/colour/translations specific to the Business Unit
 
-The options are practically limitless, as long as it's editable (and replaceable) within the metadata. [Instructions below](#advanced-scenarios).
+The options are practically limitless, as long as it's editable (and replaceable) within the metadata retrieved from [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools). [Instructions below](#advanced-scenarios).
 
 ### Pre-requisites
 - Working knowledge of [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools), specifically the `mcdev retrieve` and `mcdev deploy` functionality.
+- Basic editing of Powershell scripts
 
 ### Preparation
 1. Install [Accenture SFMC DevTools](https://github.com/Accenture/sfmc-devtools) and setup authorisation correctly as per usual.
@@ -99,6 +99,7 @@ Add the 'deploy' argument to deploy to Salesforce Marketing Cloud. The items wil
 - The solution will automatically move the deployment package to the `.[local project]\template` directory for `mcdev bdb` deployment
 - This allows tracking of the script and related packaged items in your `[local project]\src\packagedSolutions\solutionA` directory for source control, while keeping the `[local project]\template` directory free for deployment purposes.
 - Multiple projects can work concurrently in this way
+- Version control can be applied as per usual as the script will automatically execute itself in a way that doesn't require manually copying to the ./template directory for the execution 
 
 ### Tips
 - Feel free to place this in a subdirectory, but adjust #CONFIG-C accordingly
